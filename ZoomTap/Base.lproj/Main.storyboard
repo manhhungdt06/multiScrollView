@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ODs-U6-g6b">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="View2" id="BYZ-38-t0r" customClass="ViewController" customModule="ZoomTap" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zgy-oj-4ZH">
+                                <frame key="frameInset" minX="18" minY="20" width="339" height="523"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="HJf-oG-130"/>
+                                </connections>
+                            </scrollView>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="7o1-Ok-o2i">
+                                <frame key="frameInset" minX="16" minY="557" width="343" height="31"/>
+                                <connections>
+                                    <action selector="sliderZoom:" destination="BYZ-38-t0r" eventType="valueChanged" id="fuL-22-g5b"/>
+                                </connections>
+                            </slider>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="fNz-Ra-xhU">
+                                <frame key="frameInset" minX="16" minY="610" width="343" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="onChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="fTc-Rc-WBA"/>
+                                </connections>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ms-r9-Ppf">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="E4D-Y5-LSB"/>
+                                    <constraint firstAttribute="height" constant="50" id="Lfq-3T-rjD"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="previous-track-button.png"/>
+                                <connections>
+                                    <action selector="prevBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SX6-70-Gqu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BhU-xx-icJ">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="bXM-Er-AVE"/>
+                                    <constraint firstAttribute="height" constant="50" id="fKR-fx-FJ8"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="next-track-button.jpg"/>
+                                <connections>
+                                    <action selector="nextBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VSc-MZ-Hig"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7o1-Ok-o2i" firstAttribute="top" secondItem="8ms-r9-Ppf" secondAttribute="bottom" constant="251" id="9BO-AD-cyT"/>
+                            <constraint firstItem="7o1-Ok-o2i" firstAttribute="top" secondItem="BhU-xx-icJ" secondAttribute="bottom" constant="251" id="Bw6-iJ-nKO"/>
+                            <constraint firstItem="BhU-xx-icJ" firstAttribute="leading" secondItem="8ms-r9-Ppf" secondAttribute="trailing" constant="267" id="N5B-8B-3Uh"/>
+                            <constraint firstItem="8ms-r9-Ppf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="4" id="XDY-l7-fHj"/>
+                            <constraint firstItem="BhU-xx-icJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="236" id="Zwn-JD-JhO"/>
+                            <constraint firstAttribute="trailing" secondItem="BhU-xx-icJ" secondAttribute="trailing" constant="4" id="aVb-96-Ts4"/>
+                            <constraint firstItem="8ms-r9-Ppf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="236" id="qtR-VA-PgT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ViewScroll" destination="zgy-oj-4ZH" id="hB6-Al-M02"/>
+                        <outlet property="pageController" destination="fNz-Ra-xhU" id="Kl6-44-CYH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056.8" y="123.68815592203899"/>
+        </scene>
+        <!--Btn Switch-->
+        <scene sceneID="F2j-al-tLm">
+            <objects>
+                <viewController storyboardIdentifier="View1" id="Vkd-L7-JYg" customClass="btnSwitch" customModule="ZoomTap" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y4a-rO-ZZZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Ov-ol-1Of"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LJt-Gk-vh0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSJ-w0-TWi">
+                                <frame key="frameInset" minX="90" minY="150" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button 1"/>
+                                <connections>
+                                    <action selector="onClick:" destination="Vkd-L7-JYg" eventType="touchUpInside" id="bkV-LM-RQG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyR-cY-bgM">
+                                <frame key="frameInset" minX="90" minY="220" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button 2"/>
+                                <connections>
+                                    <action selector="onClick:" destination="Vkd-L7-JYg" eventType="touchUpInside" id="hkK-hg-diW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="103" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyT-eu-y2y">
+                                <frame key="frameInset" minX="90" minY="290" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button 3"/>
+                                <connections>
+                                    <action selector="onClick:" destination="Vkd-L7-JYg" eventType="touchUpInside" id="u1s-ty-czu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pns-g3-xqA"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EKb-hd-FM7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="365.60000000000002" y="123.68815592203899"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bGw-Vb-Yso">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ODs-U6-g6b" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="F71-YS-GEK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Vkd-L7-JYg" kind="relationship" relationship="rootViewController" id="hpA-NE-rVO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="soP-hC-A2G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-575.20000000000005" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="next-track-button.jpg" width="257" height="257"/>
+        <image name="previous-track-button.png" width="256" height="256"/>
+    </resources>
+</document>
