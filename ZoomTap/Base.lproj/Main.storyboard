@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ODs-U6-g6b">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ODs-U6-g6b">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,8 +26,10 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="HJf-oG-130"/>
                                 </connections>
                             </scrollView>
-                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="7o1-Ok-o2i">
-                                <frame key="frameInset" minX="16" minY="557" width="343" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="7o1-Ok-o2i">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="339" id="ulL-EH-ScI"/>
+                                </constraints>
                                 <connections>
                                     <action selector="sliderZoom:" destination="BYZ-38-t0r" eventType="valueChanged" id="fuL-22-g5b"/>
                                 </connections>
@@ -68,6 +71,8 @@
                             <constraint firstItem="8ms-r9-Ppf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="4" id="XDY-l7-fHj"/>
                             <constraint firstItem="BhU-xx-icJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="236" id="Zwn-JD-JhO"/>
                             <constraint firstAttribute="trailing" secondItem="BhU-xx-icJ" secondAttribute="trailing" constant="4" id="aVb-96-Ts4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7o1-Ok-o2i" secondAttribute="trailing" constant="2" id="aqW-Kr-a6g"/>
+                            <constraint firstItem="7o1-Ok-o2i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="2" id="b6v-77-4gM"/>
                             <constraint firstItem="8ms-r9-Ppf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="236" id="qtR-VA-PgT"/>
                         </constraints>
                     </view>

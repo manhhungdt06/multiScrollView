@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "53596A9C749E68B2A45EF8EEF97664CD168E7FB1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "53596A9C749E68B2A45EF8EEF97664CD168E7FB1" : 9223372036854775807,
+    "C6A0AD1754B91891FBBCC2F91C156DA51967F352" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6D122A07-B5DE-436C-8C70-AB5F48EC5805",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "53596A9C749E68B2A45EF8EEF97664CD168E7FB1" : "multiScrollView\/",
+    "C6A0AD1754B91891FBBCC2F91C156DA51967F352" : "musicPlayer1\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ZoomTap",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ZoomTap.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/manhhungdt06\/multiScrollView",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "53596A9C749E68B2A45EF8EEF97664CD168E7FB1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/manhhungdt06\/musicPlayer1",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C6A0AD1754B91891FBBCC2F91C156DA51967F352"
+    }
+  ]
+}
